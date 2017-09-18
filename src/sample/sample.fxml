@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane prefHeight="295.0" prefWidth="588.0">
+         <children>
+            <VBox prefHeight="295.0" prefWidth="588.0">
+               <children>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="570.0" text="Set1: {&quot;George&quot;, &quot;Jim&quot;, &quot;John&quot;, &quot;Blake&quot;, &quot;Kevin&quot;, &quot;Michael&quot;}">
+                           <padding>
+                              <Insets right="30.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="10.0" layoutY="10.0" prefHeight="21.0" prefWidth="570.0" text="Set2: {&quot;George&quot;, &quot;Katie&quot;, &quot;Kevin&quot;, &quot;Michelle&quot;, &quot;Ryan&quot;}">
+                           <padding>
+                              <Insets right="30.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Button fx:id="calculate" mnemonicParsing="false" onAction="#calculateButton" prefHeight="31.0" prefWidth="351.0" text="calculate" />
+                  <HBox layoutX="10.0" layoutY="72.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Union: ">
+                           <padding>
+                              <Insets right="20.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="unionOutput" text="Label" visible="false" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="141.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Difference:">
+                           <padding>
+                              <Insets right="20.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="differenceOutput" text="Label" visible="false" />
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="92.0" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Intersection:">
+                           <padding>
+                              <Insets right="30.0" />
+                           </padding>
+                        </Label>
+                        <Label fx:id="IntersectionOutput" text="Label" visible="false" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" />
+               </padding>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="20.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </GridPane.margin>
+      </Pane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
